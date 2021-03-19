@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="515.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.WelcomeController">
+   <children>
+      <AnchorPane prefHeight="96.0" prefWidth="787.0" style="-fx-background-color: #0396d6;">
+         <children>
+            <ImageView fitHeight="33.0" fitWidth="95.0" layoutX="607.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="14.399999999999977" AnchorPane.topAnchor="18.0">
+               <image>
+                  <Image url="@User2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="user_name" alignment="CENTER" layoutX="458.0" layoutY="5.0" prefHeight="60.0" prefWidth="104.0" text="Username" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Hospital" alignment="CENTER" layoutX="251.0" layoutY="18.0" prefHeight="60.0" prefWidth="286.0" text="Jinnah Hospital" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="251.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="18.0">
+               <font>
+                  <Font name="Ebrima Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="usertype" alignment="CENTER" layoutY="96.0" prefHeight="60.0" prefWidth="154.0" text="Admin" textAlignment="CENTER">
+         <font>
+            <Font name="Ebrima Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="employee" layoutX="39.0" layoutY="323.0" mnemonicParsing="false" onAction="#click" prefHeight="50.0" prefWidth="154.0" text="Employee" />
+      <Button fx:id="Patients" layoutX="335.0" layoutY="171.0" mnemonicParsing="false" onAction="#click" prefHeight="50.0" prefWidth="118.0" text="Patients" />
+      <Button fx:id="Bills" layoutX="335.0" layoutY="323.0" mnemonicParsing="false" onAction="#click" prefHeight="50.0" prefWidth="118.0" text="Bills" />
+      <Button fx:id="Logout" layoutX="639.0" layoutY="442.0" mnemonicParsing="false" onAction="#click" prefHeight="50.0" prefWidth="118.0" text="Logut">
+         <graphic>
+            <ImageView accessibleRole="BUTTON" fitHeight="27.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logout.png" />
+               </image>
+               
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Appointments" layoutX="27.0" layoutY="171.0" mnemonicParsing="false" onAction="#click" prefHeight="50.0" prefWidth="169.0" text=" Appointments" />
+   </children>
+</AnchorPane>

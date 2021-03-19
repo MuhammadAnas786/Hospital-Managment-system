@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="515.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.EmployeeController">
+   <children>
+      <AnchorPane prefHeight="96.0" prefWidth="787.0" style="-fx-background-color: #0396d6;">
+         <children>
+            <ImageView fitHeight="33.0" fitWidth="95.0" layoutX="607.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="14.399999999999977" AnchorPane.topAnchor="18.0">
+               <image>
+                  <Image url="@User2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="user_name" alignment="CENTER" layoutX="458.0" layoutY="5.0" prefHeight="60.0" prefWidth="104.0" text="Username" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Hospital" alignment="CENTER" layoutX="251.0" layoutY="18.0" prefHeight="60.0" prefWidth="286.0" text="Jinnah Hospital" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="251.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="18.0">
+               <font>
+                  <Font name="Ebrima Bold" size="20.0" />
+               </font>
+            </Label>
+             <JFXButton fx:id="Add" buttonType="RAISED" layoutX="113.0" layoutY="21.0" onAction="#click" prefHeight="60.0" prefWidth="138.0" ripplerFill="#0e97a1" style="-fx-background-color: white; -fx-text-fill: black; -fx-border-color: white;" styleClass="btn" stylesheets="@stylesheets.css" text="Add Employee" textFill="#fcf8f8">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label fx:id="usertype" alignment="CENTER" layoutY="96.0" prefHeight="60.0" prefWidth="154.0" text="Admin" textAlignment="CENTER">
+         <font>
+            <Font name="Ebrima Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="Doc" layoutX="36.0" layoutY="258.0" mnemonicParsing="false" onAction="#click" prefHeight="50.0" prefWidth="118.0" text="Doctors" />
+      <Button fx:id="Reception" layoutX="335.0" layoutY="258.0" mnemonicParsing="false" onAction="#click" prefHeight="50.0" prefWidth="118.0" text="Receptionist" />
+      <Button fx:id="Nurse" layoutX="620.0" layoutY="258.0" mnemonicParsing="false" onAction="#click" prefHeight="50.0" prefWidth="118.0" text="Nurses" />
+      <ImageView fx:id="Back" fitHeight="24.0" fitWidth="28.0" layoutX="30.0" layoutY="16.0" onMouseClicked="#backWindow" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-left-24.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

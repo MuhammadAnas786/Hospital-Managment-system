@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="scroll" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="795.0" styleClass="ScrollPane" stylesheets="@stylesheets.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.PatientsController">
+   <content>
+      <AnchorPane fx:id="KnowPain" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="793.0" styleClass="Anchor" stylesheets="@stylesheets.css">
+         <children>
+            <AnchorPane prefHeight="142.0" prefWidth="793.0" style="-fx-background-color: #0396d6;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="337.0" layoutY="36.0" prefHeight="61.0" prefWidth="119.0" text="Patients" textFill="WHITE" AnchorPane.leftAnchor="337.0" AnchorPane.topAnchor="36.0">
+                     <font>
+                        <Font name="Ebrima Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Hospital" alignment="CENTER" layoutX="251.0" layoutY="13.0" prefHeight="46.0" prefWidth="292.0" text="Jinnah Hospital" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="115.0" AnchorPane.leftAnchor="251.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="13.0">
+                     <font>
+                        <Font name="Ebrima Bold" size="24.0" />
+                     </font>
+                  </Label>
+                
+                  <Label fx:id="user_name" alignment="CENTER" layoutX="629.0" layoutY="6.0" prefHeight="60.0" prefWidth="104.0" text="Username" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="61.0" AnchorPane.topAnchor="6.0">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="33.0" fitWidth="95.0" layoutX="746.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="19.0">
+                     <image>
+                        <Image url="@User2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Back" fitHeight="24.0" fitWidth="28.0" layoutX="15.0" layoutY="6.0" onMouseClicked="#backWindow" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-left-24.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="search" focusColor="BLACK" labelFloat="true" layoutX="337.0" layoutY="102.0" prefHeight="25.0" prefWidth="217.0" promptText="Search" style="-fx-text-fill: black;" unFocusColor="#a4a4a4" />
+                  <JFXButton fx:id="SearchBut" buttonType="RAISED" layoutX="575.0" layoutY="98.0" onAction="#click" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: black; -fx-border-color: black; -fx-border-radius: 50px;" styleClass="btn" stylesheets="@stylesheets.css" text="Search" textFill="WHITE" />
+                  <JFXButton fx:id="refresh" buttonType="RAISED" layoutX="680.0" layoutY="98.0" onAction="#click" prefHeight="35.0" prefWidth="82.0" style="-fx-background-color: black; -fx-border-color: black; -fx-border-radius: 50px;" styleClass="btn" stylesheets="@stylesheets.css" text="Refresh" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+               
+         
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
